@@ -1,0 +1,345 @@
+/* General Body Styles */
+body {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e; /* Wet Asphalt */
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar-default {
+  background-color: #1a5276; /* Darker blue */
+  border-color: #1a5276;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1; /* Clouds */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar-default .navbar-brand:hover {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #bdc3c7; /* Silver */
+  transition: all 0.3s ease;
+  position: relative;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #ffffff;
+  background-color: #2980b9; /* Slightly darker blue */
+}
+.navbar-default .navbar-nav > .active > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #3498db;
+}
+
+/* Sidebar Panel Styling */
+.well {
+  background-color: #ffffff; /* White background */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.well:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Main Panel Tabs */
+.tab-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.nav-tabs > li > a {
+  border: none;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: transparent;
+  color: #3498db;
+  border: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border: none;
+  color: #3498db;
+  background-color: transparent;
+  border-bottom: 3px solid #3498db;
+  margin-bottom: -2px;
+}
+
+/* Button Styling */
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  background-color: #3498db; /* Peter River */
+  color: white;
+  background-image: linear-gradient(135deg, #3498db, #2980b9);
+}
+.btn-primary:hover {
+  background-color: #2980b9;
+  background-image: linear-gradient(135deg, #2980b9, #2573a7);
+}
+
+.btn-success {
+  background-color: #2ecc71; /* Emerald */
+  background-image: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+.btn-success:hover {
+  background-color: #27ae60;
+  background-image: linear-gradient(135deg, #27ae60, #219653);
+}
+
+.btn-info {
+  background-color: #5dade2;
+  background-image: linear-gradient(135deg, #5dade2, #3498db);
+}
+.btn-info:hover {
+  background-color: #3498db;
+  background-image: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.btn-warning {
+  background-color: #f39c12;
+  background-image: linear-gradient(135deg, #f39c12, #e67e22);
+}
+.btn-warning:hover {
+  background-color: #e67e22;
+  background-image: linear-gradient(135deg, #e67e22, #d35400);
+}
+
+/* Block-level buttons */
+.btn-block {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+}
+
+
+/* Headers */
+h3, h4 {
+  color: #2c3e50; /* Midnight Blue */
+  font-weight: 600;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+h3::after, h4::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #3498db;
+}
+
+/* DT Table Styling */
+.dataTables_wrapper {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.dataTable {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.dataTable thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #3498db !important;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 12px 10px;
+}
+
+.dataTable tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+.dataTable tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* Pagination styling */
+.dataTables_paginate .paginate_button {
+  border-radius: 4px !important;
+  border: none !important;
+  background: #f8f9fa !important;
+}
+
+.dataTables_paginate .paginate_button.current,
+.dataTables_paginate .paginate_button.current:hover {
+  background: #3498db !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* File Input Styling */
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
+}
+
+/* Card Style for Sections */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Notification Styling */
+.shiny-notification {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: none;
+  padding: 16px;
+}
+
+/* Progress Bar */
+.progress {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background-image: linear-gradient(135deg, #28a745, #218838);
+  color: transparent; /* Ocultar el texto */
+  text-indent: -9999px; /* Asegurar que el texto esté fuera de la vista */
+  overflow: hidden;
+}
+
+/* Ocultar texto en la barra de progreso de carga de archivos */
+.progress-bar::after {
+  content: "";
+}
+
+/* Estilo para el componente de carga de archivos */
+.form-group.shiny-input-container .progress .progress-bar span {
+  display: none !important;
+}
+
+/* Mejorar apariencia del botón de carga de archivos */
+.btn-file {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  color: #495057;
+  transition: all 0.3s ease;
+}
+
+.btn-file:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .well {
+    margin-bottom: 15px;
+  }
+  
+  .btn-block {
+    padding: 8px 12px;
+  }
+  
+  h3, h4 {
+    font-size: 18px;
+  }
+}
