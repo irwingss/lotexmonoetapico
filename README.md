@@ -1,4 +1,4 @@
-# Aplicación Shiny de Diseño Bietápico
+# Aplicación Shiny de Diseño Monoetápico
 
 Esta aplicación implementa un diseño de muestreo bietápico para análisis de datos espaciales. La aplicación permite cargar archivos Excel, realizar análisis de percentiles y visualizar resultados.
 
@@ -32,7 +32,7 @@ La aplicación requiere los siguientes paquetes de R:
 Para ejecutar la aplicación localmente:
 
 ```r
-shiny::runApp("app_01_muestreo_bietapico.R")
+shiny::runApp("app_01_muestreo_monoetapico.R")
 ```
 
 ## Despliegue
