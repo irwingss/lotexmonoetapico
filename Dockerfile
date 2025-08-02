@@ -24,7 +24,7 @@ COPY . /srv/shiny-server/app/
 WORKDIR /srv/shiny-server/app
 
 # Crear un script para iniciar la aplicación
-RUN echo '#!/bin/sh\nR -e "shiny::runApp(\"/srv/shiny-server/app/app_01_muestreo_bietapico.R\", host=\"0.0.0.0\", port=3838)"' > /usr/bin/start_app.sh \
+RUN echo '#!/bin/sh\nR -e "shiny::runApp(\"/srv/shiny-server/app/app_01_muestreo_monoetapico.R\", host=\"0.0.0.0\", port=3838)"' > /usr/bin/start_app.sh \
     && chmod +x /usr/bin/start_app.sh
 
 # Exponer el puerto de shiny
